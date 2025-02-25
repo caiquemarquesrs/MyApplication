@@ -1,27 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:padding="16dp"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/baseline_account_circle_24"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_input"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ronded_corner"
+            android:hint="Usuário"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_input"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ronded_corner"
+            android:hint="Senha"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_btn"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:padding="18dp"
+            android:text="Login"
+            android:textColor="#3B84F1"
+            android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="186dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Login Social"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:id="@+id/face_btn"
+                android:src="@drawable/face" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:id="@+id/linke_btn"
+                android:src="@drawable/linke" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:id="@+id/x_btn"
+                android:src="@drawable/x" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
