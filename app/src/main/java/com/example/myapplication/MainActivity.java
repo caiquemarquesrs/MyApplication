@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(v -> {
             String username = usernameInput.getText().toString();
             String password = passwordInput.getText().toString();
-            Log.i("Teste", "Username: " + username + "and Password: " + password);
+            Log.i("Teste", "Username: " + username + " and Password: " + password);
+            if (username.isEmpty() || password.isEmpty()) {
+                Toast.makeText(MainActivity.this, "Preencha todos os campos!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(MainActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
         }
-    }
+    });
+}
 }

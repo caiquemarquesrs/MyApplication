@@ -18,6 +18,14 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Redefinir Senha"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="50dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/newPassword_input"
             android:layout_marginTop="32dp"
             android:background="@drawable/ronded_corner"
@@ -31,12 +39,25 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/confirmNewPassword_input"
+            android:id="@+id/confirmPassword_input"
             android:layout_marginTop="32dp"
             android:background="@drawable/ronded_corner"
-            android:hint="Confirme a nova senha"
+            android:hint="Confirme sua senha"
             android:inputType="text"
             android:padding="18dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alterar_senha"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:padding="18dp"
+            android:text="Alterar senha"
+            android:textColor="#3B84F1"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>
