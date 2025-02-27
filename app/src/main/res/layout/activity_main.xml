@@ -53,7 +53,8 @@
             android:text="Esqueci minha senha"
             android:layout_marginTop="10dp"
             android:textColor="@color/white"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:onClick="passRecover"/>
         
         <Button
             android:layout_width="match_parent"

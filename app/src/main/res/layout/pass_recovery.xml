@@ -18,6 +18,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/TelaRecuperao"
             android:text=" Redefinir Senha "
             android:textColor="@color/white"
             android:textColorHint="@color/white"

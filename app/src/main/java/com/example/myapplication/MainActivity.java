@@ -1,7 +1,9 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -41,7 +43,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Preencha todos os campos!", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(MainActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
-        }
-    });
-}
+            }
+
+        });
+
+    }
+    public static void passRecover (View v){
+        Intent intent = new Intent(v.getContext(), TelaRecuperacao.class);
+        v.getContext().startActivity(intent);
+    }
 }
